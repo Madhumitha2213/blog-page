@@ -6,7 +6,7 @@ const content = document.getElementById("content");
 const postedBy = document.getElementById("postedby");
 
 // Handle form submission
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
     // Prevent default form submission
     e.preventDefault();
 
@@ -35,11 +35,40 @@ form.addEventListener("submit", (e) => {
         showError(postedBy, "Please select the author.");
         isValid = false;
     }
+    
+    window.location.href = 'bloglist.html';
 
     // If all fields are valid, proceed
     if (isValid) {
-        alert("Blog saved successfully!");
-        form.submit(); // Submit the form
+        // Collect form data
+        const blogData = {
+            title: title.value,
+            category: category.value,
+            content: content.value,
+            postedBy: postedBy.value,
+            publishDate: document.getElementById("date").value,
+        };
+
+        try {
+            // Send a POST request to the JSON server
+            const response = await fetch("http://localhost:3000/blogs", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(blogData),
+            });
+
+            if (response.ok) {
+                alert("Blog saved successfully!");
+                form.reset(); // Clear the form after successful submission
+            } else {
+                alert("Failed to save the blog. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("An error occurred while saving the blog.");
+        }
     }
 });
 
@@ -51,19 +80,25 @@ function showError(element, message) {
     }
 }
 
+
+
+
 // Function to clear all error messages
 function clearErrors() {
     const errorElements = document.querySelectorAll(".error");
     errorElements.forEach((error) => (error.textContent = ""));
 }
 
+// Auto-generate the current date and time
 document.addEventListener("DOMContentLoaded", () => {
     const dateField = document.getElementById("date");
     const now = new Date();
 
     // Format the date as DD-MM-YYYY HH:mm
-    const formattedDate = now.toLocaleDateString("en-GB") + " " + now.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+    const formattedDate =
+        now.toLocaleDateString("en-GB") +
+        " " +
+        now.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
 
-    // Set the value of the date field
     dateField.value = formattedDate;
 });
