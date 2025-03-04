@@ -1,0 +1,56 @@
+
+body {
+    background: linear-gradient(to bottom right, #7e4315,#756d6d ) ;
+    height: 100vh;
+    
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+.card {
+    max-width: 60%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.card-body{
+    padding:5rem;
+    justify-content: center;
+    width: 700px;
+    
+
+}
+ #blog{
+     background-color: #f8f9fa;
+        }
+ #card {
+    background-color: #e3f7fc;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+        }
+ .create-blog-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+        }
+    
+@media (min-width: auto) {
+    .card-body {
+        padding: 5rem; 
+        width: 700px; 
+    }
+}
+#content,#postedby,#title,#category,#date{
+    border: 2px solid; /* Default border */
+}
+
+#content:focus,#postedby:focus,#title:focus,#category:focus,#date:focus{
+    border-color: orangered!important; /* Force the border color to blue */
+    outline: none !important; 
+    box-shadow: 0 0 5px orangered !important; /* Custom shadow effect */
+}
+#save{
+     margin-top: 10px;
+}
