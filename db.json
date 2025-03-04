@@ -1,0 +1,20 @@
+{
+  "blogs": [
+    {
+      "id": "02fc",
+      "title": "edffgc",
+      "category": "lifestyle",
+      "content": "ytttttthhhbhbhjhbjhbj",
+      "postedBy": "samantha",
+      "publishDate": "04/03/2025 18:09"
+    },
+    {
+      "id": "96ae",
+      "title": "hello",
+      "category": "education",
+      "content": "ejgfuiegufge",
+      "postedBy": "vijay",
+      "publishDate": "04/03/2025 18:20"
+    }
+  ]
+}
