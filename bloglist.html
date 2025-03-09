@@ -157,7 +157,7 @@
             console.log('Editing blog with ID:', id); // Debug: Log the ID
 
             try {
-                const response = await fetch(http://localhost:3000/post/${id});
+                const response = await fetch('http://localhost:3000/post/${id}');
                 if (!response.ok) {
                     throw new Error('Failed to fetch blog');
                 }
@@ -195,7 +195,7 @@
             };
 
             try {
-                const response = await fetch(http://localhost:3000/post/${id}, {
+                const response = await fetch('http://localhost:3000/post/${id}', {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
@@ -233,7 +233,7 @@
             console.log('Confirming delete for blog ID:', id); // Debug: Log the ID
 
             try {
-                const response = await fetch(http://localhost:3000/post/${id}, {
+                const response = await fetch('http://localhost:3000/post/${id}', {
                     method: 'DELETE',
                 });
 
