@@ -1,56 +1,229 @@
-
 body {
-    background: linear-gradient(to bottom right, #677e15,#ffffff ) ;
+    background: linear-gradient(to bottom right, #677e15, #ffffff);
     height: 100vh;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#container{
+
+/* Container styling */
+#container {
     display: flex;
     justify-content: center;
 }
+
+/* Card styling */
 .card {
-    max-width: 60%;
+    max-width: 80%;
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin: auto;
 }
-.card-body{
-    padding:5rem;
+
+.card-body {
+    padding: 3rem;
     justify-content: center;
     width: 700px;
-    
-
 }
- #blog{
-     background-color: #f8f9fa;
-        }
- #card {
+
+/* Blog list page styling */
+#blog {
+    background-color: #f8f9fa;
+}
+
+#card {
     background-color: #e3f7fc;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-        }
- .create-blog-btn {
+}
+
+.create-blog-btn {
     background-color: #007bff;
     color: #fff;
     border: none;
-        }
-    
-@media (min-width: auto) {
-    .card-body {
-        padding: 5rem; 
-        width: 700px; 
-    }
-}
-#content,#postedby,#title,#category,#date{
-    border: 2px solid; /* Default border */
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
-#content:focus,#postedby:focus,#title:focus,#category:focus,#date:focus{
-    border-color: orangered!important; /* Force the border color to blue */
-    outline: none !important; 
-    box-shadow: 0 0 5px orangered !important; /* Custom shadow effect */
+.create-blog-btn:hover {
+    background-color: #0056b3;
 }
-#save{
-     margin-top: 10px;
+
+/* Form elements styling */
+#content,
+#postedby,
+#title,
+#category,
+#date {
+    border: 2px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+#content:focus,
+#postedby:focus,
+#title:focus,
+#category:focus,
+#date:focus {
+    border-color: orangered !important;
+    outline: none !important;
+    box-shadow: 0 0 5px orangered !important;
+}
+
+/* Form structure for left-aligned labels */
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.col-form-label {
+    font-weight: 500;
+    color: #333;
+    padding-right: 1rem;
+    text-align: right;
+}
+
+/* Improve label alignment */
+.text-sm-end {
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+    border-color: #545b62;
+}
+
+/* Blog card styling */
+#blogsContainer .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #007bff;
+}
+
+#blogsContainer .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog actions styling */
+.blog-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        max-width: 95%;
+    }
+
+    .card-body {
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .text-sm-end {
+        text-align: left;
+        padding-bottom: 0.5rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .col-sm-3,
+    .col-sm-9 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-sm-3 {
+        width: 30%;
+    }
+
+    .col-sm-9 {
+        width: 70%;
+    }
+}
+
+/* Error message styling */
+.error {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    color: #dc3545 !important;
+}
+
+/* Content editor styling */
+.content-editor-wrapper {
+    position: relative;
+    background: #fff;
+    border-radius: 0.25rem;
+}
+
+.content-editor-toolbar {
+    display: flex;
+    gap: 5px;
+}
+
+.content-editor-toolbar .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+/* Rich text editor styles */
+.content-editor {
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0.75rem;
+    line-height: 1.6;
+}
+
+/* Apply specific styling to formatted elements */
+.content-editor strong {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.content-editor em {
+    color: #555;
+    font-style: italic;
+}
+
+/* Focus state for rich text editor */
+.content-editor:focus {
+    outline: none;
+    border-color: orangered !important;
+    box-shadow: 0 0 5px orangered !important;
+}
+
+/* Ensure editor retains styling */
+.editor-field {
+    position: relative;
 }
