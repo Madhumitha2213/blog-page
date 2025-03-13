@@ -1,12 +1,20 @@
 {
   "post": [
     {
-      "id": "ee22",
-      "title": "heyy",
+      "title": "title",
       "category": "lifestyle",
-      "content": "<h1><strong>heyy</strong></h1>",
+      "content": "<h1>likith</h1><p><br></p>",
       "postedBy": "vinod",
-      "publishDate": "3/13/2025, 3:50:31 PM"
+      "publishDate": "3/13/2025, 4:59:33 PM",
+      "id": "1f9b"
+    },
+    {
+      "title": "hey",
+      "category": "tech",
+      "content": "<ul><li><strong><em>Charlie</em></strong></li></ul><p><br></p>",
+      "postedBy": "vinod",
+      "publishDate": "3/13/2025, 9:29:08 PM",
+      "id": "967f"
     }
   ]
 }
