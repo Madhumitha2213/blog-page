@@ -341,6 +341,6 @@ async function confirmDelete() {
         }
     } catch (error) {
         console.error('Error deleting blog:', error);
-        alert('Failed to delete the blog. Please try again.');
+        alert('Failed to delete the blog. Please try again later.');
     }
 }
