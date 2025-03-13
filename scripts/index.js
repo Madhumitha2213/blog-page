@@ -45,14 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-if (response.ok) {
-    alert("Blog saved successfully!");
-    // Redirect to blog list page
-    window.location.href = "bloglist.html";
-} else {
-    throw new Error("Failed to save the blog.");
-}
 // Handle form submission
 async function handleFormSubmit(e) {
     e.preventDefault(); // Prevent default form submission
@@ -106,9 +98,8 @@ async function handleFormSubmit(e) {
             });
             
             if (response.ok) {
-                alert("Blog saved successfully!");
-                // Redirect to blog list page
-                window.location.href = "index.html";
+               
+                window.location.href = "bloglist.html";
             } else {
                 throw new Error("Failed to save the blog.");
             }
@@ -143,8 +134,6 @@ function redirectToBlogList() {
 function redirectToCreateBlog() {
     window.location.href = 'index.html';
 }
-
-// The rest of the code remains the same...
 
 // Fetch blogs from the JSON server and display them
 async function fetchBlogs() {

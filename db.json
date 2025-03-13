@@ -1,92 +1,12 @@
 {
   "post": [
     {
-      "id": "81d2",
-      "title": "hey",
-      "category": "lifestyle",
-      "content": "<p>hey</p>",
-      "postedBy": "madhumitha",
-      "publishDate": "3/12/2025, 4:26:34 PM"
-    },
-    {
-      "id": "931f",
+      "id": "ee22",
       "title": "heyy",
       "category": "lifestyle",
-      "content": "<p>heyyyyy</p>",
-      "postedBy": "madhumitha",
-      "publishDate": "3/12/2025, 5:37:41 PM"
-    },
-    {
-      "id": "491e",
-      "title": "hy",
-      "category": "education",
-      "content": "<p>hy</p>",
-      "postedBy": "madhumitha",
-      "publishDate": "3/12/2025, 5:38:20 PM"
-    },
-    {
-      "id": "89a8",
-      "title": "jhjk",
-      "category": "movies",
-      "content": "<p>rffwfa</p>",
+      "content": "<h1><strong>heyy</strong></h1>",
       "postedBy": "vinod",
-      "publishDate": "3/12/2025, 5:47:01 PM"
-    },
-    {
-      "id": "68ba",
-      "title": "zfs",
-      "category": "education",
-      "content": "<p>SFse</p>",
-      "postedBy": "vijay",
-      "publishDate": "3/12/2025, 5:49:22 PM"
-    },
-    {
-      "id": "2b8b",
-      "title": "jgvjhvjhv",
-      "category": "education",
-      "content": "<p>khbkhvkhvkjvk</p>",
-      "postedBy": "samantha",
-      "publishDate": "3/12/2025, 5:51:17 PM"
-    },
-    {
-      "id": "08b5",
-      "title": "adadada",
-      "category": "lifestyle",
-      "content": "<p>adada</p>",
-      "postedBy": "madhumitha",
-      "publishDate": "3/12/2025, 3:39:37 PM"
-    },
-    {
-      "id": "e9d2",
-      "title": "kjbbkbkjb",
-      "category": "tech",
-      "content": "<p>lknknknkn</p>",
-      "postedBy": "vinod",
-      "publishDate": "12/03/2025, 18:14:39"
-    },
-    {
-      "id": "72f3",
-      "title": "madhuuuu",
-      "category": "education",
-      "content": "<h1><strong>im a good girl </strong></h1>",
-      "postedBy": "vinod",
-      "publishDate": "12/03/2025, 18:16:10"
-    },
-    {
-      "id": "79ea",
-      "title": "afadad",
-      "category": "education",
-      "content": "<p>adadad</p>",
-      "postedBy": "vinod",
-      "publishDate": "3/12/2025, 6:20:51 PM"
-    },
-    {
-      "id": "265f",
-      "title": "adadada",
-      "category": "lifestyle",
-      "content": "<p>adadadada</p>",
-      "postedBy": "samantha",
-      "publishDate": "3/12/2025, 6:22:11 PM"
+      "publishDate": "3/13/2025, 3:50:31 PM"
     }
   ]
 }
