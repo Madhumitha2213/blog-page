@@ -22,7 +22,7 @@
                     <!-- Title Field -->
                     <div class="row mb-3 form-row">
                         <label for="title" class="col-12 col-md-3 col-form-label text-md-end mb-2 mb-md-0">Title</label>
-                        <div class="col-12 col-md-9">
+                        <div class="col-12 col-md-7">
                             <input type="text" class="form-control" id="title" name="title" placeholder="Enter blog title" required>
                             <div class="error text-danger mt-1 small"></div>
                         </div>
@@ -31,7 +31,7 @@
                     <!-- Category Field -->
                     <div class="row mb-3 form-row">
                         <label for="category" class="col-12 col-md-3 col-form-label text-md-end mb-2 mb-md-0">Category</label>
-                        <div class="col-12 col-md-9">
+                        <div class="col-12 col-md-7">
                             <select class="form-select" id="category" name="category" required>
                                 <option value="">Select Category</option>
                                 <option value="tech">Tech</option>
@@ -46,7 +46,7 @@
                     <!-- Content Field -->
                     <div class="row mb-3 form-row">
                         <label for="content" class="col-12 col-md-3 col-form-label text-md-end mb-2 mb-md-0">Content</label>
-                        <div class="col-12 col-md-9">
+                        <div class="col-12 col-md-7">
                             <!-- Quill editor container with responsive height -->
                             <div id="editor" class="form-control" style="height: 200px; min-height: 150px; max-height: 500px;"></div>
                             <textarea id="content" name="content" style="display: none;" required></textarea>
@@ -60,7 +60,7 @@
                     <!-- Posted By Field -->
                     <div class="row mb-3 form-row">
                         <label for="postedby" class="col-12 col-md-3 col-form-label text-md-end mb-2 mb-md-0">Posted By</label>
-                        <div class="col-12 col-md-9">
+                        <div class="col-12 col-md-7">
                             <select class="form-select" id="postedby" name="postedby" required>
                                 <option value="">Posted by</option>
                                 <option value="vijay">Vijay</option>
@@ -75,15 +75,15 @@
                     <!-- Publish Date Field -->
                     <div class="row mb-4 form-row">
                         <label class="col-12 col-md-3 col-form-label text-md-end mb-2 mb-md-0">Publish Date</label>
-                        <div class="col-12 col-md-9">
+                        <div class="col-12 col-md-7">
                             <input type="text" class="form-control" id="date" readonly placeholder="hh">
                         </div>
                     </div>
 
                     <!-- Buttons with responsive alignment -->
-                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-end gap-2 mt-4">
-                        <button type="submit" class="btn btn-primary order-1 order-sm-2">Save</button>
-                        <button type="button" class="btn btn-secondary order-2 order-sm-1" onclick="redirectToBlogList()">Cancel</button>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-center gap-2 mt-3">
+                        <button type="submit" class="btn btn-primary order-1 order-sm-1">Save</button>
+                        <button type="button" class="btn btn-secondary order-2 order-sm-2" onclick="redirectToBlogList()">Cancel</button>
                     </div>
                 </form>
             </div>
