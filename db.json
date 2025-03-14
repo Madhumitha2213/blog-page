@@ -1,20 +1,20 @@
 {
   "post": [
     {
-      "title": "title",
+      "title": "Madhumitha",
       "category": "lifestyle",
-      "content": "<h1>likith</h1><p><br></p>",
+      "content": "<h2><em>Charlie is good</em></h2><p>h</p>",
       "postedBy": "vinod",
-      "publishDate": "3/13/2025, 4:59:33 PM",
-      "id": "1f9b"
+      "publishDate": "3/14/2025, 10:36:04 AM",
+      "id": "206d"
     },
     {
-      "title": "hey",
-      "category": "tech",
-      "content": "<ul><li><strong><em>Charlie</em></strong></li></ul><p><br></p>",
-      "postedBy": "vinod",
-      "publishDate": "3/13/2025, 9:29:08 PM",
-      "id": "967f"
+      "id": "d984",
+      "title": "madhumitha",
+      "category": "lifestyle",
+      "content": "<h2><strong>hello</strong></h2>",
+      "postedBy": "madhumitha",
+      "publishDate": "3/14/2025, 11:21:16 AM"
     }
   ]
 }
